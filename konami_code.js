@@ -7,7 +7,6 @@ function init() {
 
 
 const alphabet = [65, 66, 67];
- 
 // Keep track of index outside of the event handler.
 let index = 0;
  
@@ -15,11 +14,11 @@ let index = 0;
 function onKeyDownHandler(e) {
   const key = parseInt(e.detail || e.which);
  
-  if (key === alphabet[index]) {
+  if (key === code[index]) {
     index++;
  
-    if (index === alphabet.length) {
-      alert("Hurray!");
+    if (index === code.length) {
+      alert("good job!");
  
       index = 0;
     }
